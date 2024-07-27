@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Taxímetro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Taxímetro</h1>
+        <form id="taximeter-form">
+            <div class="form-group">
+                <label for="current-amount">Monto acumulado actual en el taxímetro:</label>
+                <input type="number" id="current-amount" step="0.01" placeholder="Ejemplo: 10.50" required>
+            </div>
+            <div class="form-group">
+                <label for="increase-amount">Incremento del monto por intervalo:</label>
+                <input type="number" id="increase-amount" step="0.01" placeholder="Ejemplo: 0.50" required>
+            </div>
+            <div class="form-group">
+                <label for="increase-time">Duración del intervalo en minutos:</label>
+                <input type="number" id="increase-time" step="0.01" placeholder="Ejemplo: 2" required>
+            </div>
+            <div class="form-group">
+                <label for="remaining-time">Tiempo restante del recorrido en minutos:</label>
+                <input type="number" id="remaining-time" step="0.01" placeholder="Ejemplo: 15" required>
+            </div>
+            <button type="submit">Calcular</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
